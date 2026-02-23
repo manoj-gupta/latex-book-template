@@ -1,0 +1,31 @@
+\documentclass[a4paper,11pt]{book}
+
+% Custom commands and packages
+\input{preamble/packages}
+\input{preamble/commands}
+
+% Document metadata
+\title{A Sample LaTeX Book}
+\author{John Doe}
+\date{\today}
+
+\begin{document}
+
+% Front matter
+\frontmatter
+\input{src/frontmatter}
+
+% Main content
+\mainmatter
+\input{src/chapter1}
+\input{src/chapter2}
+\input{src/chapter3}
+
+% Back matter
+\appendix
+\input{src/appendix}
+
+\backmatter
+\input{src/backmatter}
+
+\end{document}

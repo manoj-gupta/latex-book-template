@@ -1,0 +1,65 @@
+\chapter{Advanced Features}
+
+\section{Cross-referencing}
+\LaTeX{} provides excellent cross-referencing capabilities. You can reference:
+
+\begin{itemize}
+    \item Sections: See Section~\ref{sec:figures}
+    \item Equations: As shown in Equation~\ref{eq:integral}
+    \item Figures: Refer to Figure~\ref{fig:example}
+    \item Tables: See Table~\ref{tab:comparison} in Chapter 1
+\end{itemize}
+
+\section{Figures and Graphics}\label{sec:figures}
+
+\begin{figure}[H]
+\centering
+% In a real project, you would include an actual image:
+% \includegraphics[width=0.8\textwidth]{figures/latex-logo.pdf}
+\fbox{\begin{minipage}{0.8\textwidth}
+    \centering
+    \vspace{2cm}
+    \textbf{Placeholder for LaTeX logo}
+    \vspace{2cm}
+\end{minipage}}
+\caption{An example figure showing the LaTeX logo}
+\label{fig:example}
+\end{figure}
+
+\section{Mathematics}
+Complex equations are easy in \LaTeX:
+
+\begin{equation}
+\int_{-\infty}^{\infty} e^{-x^2} dx = \sqrt{\pi}
+\label{eq:integral}
+\end{equation}
+
+Matrix operations:
+\[
+\begin{bmatrix}
+a & b & c \\
+d & e & f \\
+g & h & i
+\end{bmatrix}
+\begin{bmatrix}
+x \\
+y \\
+z
+\end{bmatrix}
+=
+\begin{bmatrix}
+ax + by + cz \\
+dx + ey + fz \\
+gx + hy + iz
+\end{bmatrix}
+\]
+
+\section{Theorems and Proofs}
+\begin{theorem}[Pythagorean Theorem]
+In a right triangle, the square of the hypotenuse equals the sum of 
+the squares of the other two sides.
+\end{theorem}
+
+\begin{proof}
+Consider a right triangle with sides $a$, $b$, and hypotenuse $c$\ldots
+\end{proof}

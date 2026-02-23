@@ -1,0 +1,38 @@
+\chapter{Bibliography and Citations}
+
+\section{Citation Methods}
+There are several ways to cite references in \LaTeX{}:
+
+\begin{itemize}
+    \item Parenthetical: \nolinebreak\cite{knuth1984}
+    \item Textual: As shown by \nolinebreak\cite{lamport1994}
+    \item Multiple: \nolinebreak\cite{knuth1984, lamport1994}
+\end{itemize}
+
+\section{Bibliography Styles}
+Different bibliography styles include:
+
+\begin{itemize}
+    \item \texttt{plain}: Basic numbered style
+    \item \texttt{alpha}: Alphabetic labels
+    \item \texttt{unsrt}: Unsorted numbered
+    \item \texttt{acm}: ACM style
+    \item \texttt{ieee}: IEEE style
+\end{itemize}
+
+\section{Managing References}
+Use a \texttt{.bib} file to manage references. Example entry:
+
+\begin{verbatim}
+@book{knuth1984,
+  title={The TeXbook},
+  author={Knuth, Donald E.},
+  year={1984},
+  publisher={Addison-Wesley}
+}
+\end{verbatim}
+
+\section{Reference Example}
+\LaTeX{} was created by Leslie Lamport \nolinebreak\cite{lamport1994} based on 
+Donald Knuth's \TeX{} system \nolinebreak\cite{knuth1984}. For modern usage, 
+see comprehensive guides like \nolinebreak\cite{oetiker1995}.

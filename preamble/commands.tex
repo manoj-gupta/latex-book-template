@@ -1,0 +1,27 @@
+% Custom commands
+\newcommand{\code}[1]{\texttt{#1}}
+\newcommand{\file}[1]{\texttt{#1}}
+\newcommand{\important}[1]{\textbf{\textcolor{red}{#1}}}
+\newcommand{\todo}[1]{\textcolor{orange}{[TODO: #1]}}
+\newcommand{\note}[1]{\textcolor{blue}{[Note: #1]}}
+
+% Math shortcuts
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\C}{\mathbb{C}}
+
+% For inserting placeholder images
+\newcommand{\placeholderfig}[2][0.5]{
+    \begin{figure}[H]
+        \centering
+        \fbox{\begin{minipage}{#1\textwidth}
+            \centering
+            \vspace{2cm}
+            \textbf{Figure:} #2
+            \vspace{2cm}
+        \end{minipage}}
+        \caption{#2}
+    \end{figure}
+}

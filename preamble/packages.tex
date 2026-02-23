@@ -1,0 +1,82 @@
+% Essential packages
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{xcolor}
+\usepackage{listings}
+\usepackage{lipsum}  % For dummy text, remove in production
+\usepackage{makeidx}  % For index generation
+\makeindex
+
+% Page layout and geometry
+\usepackage[top=1in, bottom=1.2in, left=1.5in, right=1in]{geometry}
+\usepackage{fancyhdr}
+\usepackage{setspace}
+\usepackage{microtype}
+\usepackage{titlesec}
+\usepackage{titletoc}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=red,urlcolor=cyan]{hyperref}
+\usepackage{bookmark}
+
+% Abstract environment for book class
+\newenvironment{abstract}
+{\clearpage\thispagestyle{plain}\null\vfill\begin{center}%
+\bfseries Abstract\end{center}\quotation}
+{\endquotation\vfill\null}
+
+% Page style setup
+\pagestyle{fancy}
+\fancyhf{}
+\setlength{\headheight}{14pt}
+\fancyhead[C]{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Line spacing
+\onehalfspacing
+
+% Chapter style
+\titleformat{\chapter}[display]
+  {\normalfont\huge\bfseries\centering}
+  {\chaptertitlename\ \thechapter}{20pt}{\Huge}
+\titlespacing*{\chapter}{0pt}{50pt}{40pt}
+
+% Better table of contents
+\titlecontents{chapter}
+  [0em]
+  {\bfseries}
+  {\contentslabel{1.5em}}
+  {}
+  {\titlerule*[1pc]{.}\contentspage}
+
+% Code listing configuration
+% \lstset{
+%     basicstyle=\ttfamily\small,
+%     keywordstyle=\color{blue},
+%     commentstyle=\color{gray},
+%     stringstyle=\color{red},
+%     numbers=left,
+%     numberstyle=\tiny\color{gray},
+%     stepnumber=1,
+%     numbersep=5pt,
+%     backgroundcolor=\color{white},
+%     showspaces=false,
+%     showstringspaces=false,
+%     showtabs=false,
+%     frame=single,
+%     rulecolor=\color{black},
+%     tabsize=2,
+%     breaklines=true,
+%     captionpos=b
+% }
+
+% Theorem environments
+\newtheorem{theorem}{Theorem}[chapter]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}

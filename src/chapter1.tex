@@ -1,0 +1,66 @@
+\chapter{Introduction to LaTeX}
+
+\section{What is LaTeX?}
+\LaTeX{} is a high-quality typesetting system, designed for the production 
+of technical and scientific documentation. \LaTeX{} is the de facto standard 
+for the communication and publication of scientific documents.
+
+\subsection{Advantages of LaTeX}
+\begin{itemize}
+    \item Professional typesetting of mathematics
+    \item Automatic numbering of sections, equations, and figures
+    \item Bibliographic management
+    \item Cross-referencing capabilities
+    \item Platform independence
+\end{itemize}
+
+\section{Project Structure}
+A well-organized LaTeX project should separate content from formatting:
+
+\begin{verbatim}
+project/
+|-- main.tex              # Main document
+|-- chapters/             # Chapter files
+|-- figures/              # Images
+|-- preamble/             # Custom commands
+L-- references.bib        # Bibliography
+\end{verbatim}
+
+\section{Example Mathematics}
+The quadratic formula is:
+\[
+x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
+\]
+
+Einstein's famous equation:
+\[
+E = mc^2
+\]
+
+\section{Code Example}
+Here's a simple Python function:
+
+\begin{lstlisting}[language=Python, caption={Fibonacci function}]
+def fibonacci(n):
+    """Return the nth Fibonacci number."""
+    if n <= 1:
+        return n
+    return fibonacci(n-1) + fibonacci(n-2)
+\end{lstlisting}
+
+\begin{table}[H]
+\centering
+\caption{Comparison of document preparation systems}
+\begin{tabular}{lccc}
+\toprule
+\textbf{System} & \textbf{Ease of Use} & \textbf{Typesetting Quality} & \textbf{Math Support} \\
+\midrule
+Microsoft Word & High & Medium & Poor \\
+Google Docs & High & Low & Poor \\
+\LaTeX & Low & Excellent & Excellent \\
+\bottomrule
+\end{tabular}
+\label{tab:comparison}
+\end{table}
+
+See Table~\ref{tab:comparison} for a comparison of different systems.
