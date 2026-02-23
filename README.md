@@ -10,14 +10,13 @@ A complete, working LaTeX book project with Makefile automation.
 
 ## Project Structure
 latex-book/
-├── Makefile # Build automation
-├── main.tex # Main document
-├── book.cls # Custom document class
-├── references.bib # Bibliography
-├── src/ # Chapter files
-├── figures/ # Images and graphics
-├── preamble/ # Custom commands and packages
-└── build/ # Build directory (auto-created)
+ - Makefile # Build automation
+ - main.tex # Main document
+ - references.bib # Bibliography
+ - src/ # Chapter files
+ - figures/ # Images and graphics
+ - preamble/ # Custom commands and packages
+ - build/ # Build directory (auto-created)
 
 ## Makefile Commands
 
@@ -33,10 +32,9 @@ latex-book/
 ## Customization
 
 1. Edit `main.tex` to change document metadata
-2. Modify `book.cls` to change document styling
-3. Add chapters in `src/` directory
-4. Add references to `references.bib`
-5. Update `Makefile` variables as needed
+2. Add chapters in `src/` directory
+3. Add references to `references.bib`
+4. Update `Makefile` variables as needed
 
 ## Dependencies
 
