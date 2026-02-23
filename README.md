@@ -9,7 +9,7 @@ A complete, working LaTeX book project with Makefile automation.
 3. Run `make view` to open the PDF
 
 ## Project Structure
-latex-book/
+latex-book-template/
  - Makefile # Build automation
  - main.tex # Main document
  - references.bib # Bibliography
